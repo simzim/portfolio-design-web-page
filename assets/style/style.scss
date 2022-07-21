@@ -1,5 +1,5 @@
-@import "nullstyle.scss";
-@import "variable.scss";
+@import "_nullstyle.scss";
+@import "_variable.scss";
 
 .full {
   background: $dark-bg;
@@ -227,6 +227,6 @@ header {
   }
 }
 
-@import "media.scss";
+@import "_media.scss";
 
 
