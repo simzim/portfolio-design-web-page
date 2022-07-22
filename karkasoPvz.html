@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Karkaso PVZ</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .body {
+        width: 100%;
+        overflow-x: hidden;
+        background-color: #0f1624;
+      }
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+
+        /* nereikalinga tik dėl vizualumo uždėta */
+        border: 10px solid red;
+        text-align: center;
+        font-size: 40px;
+      }
+      header {
+        /* šioje vietoje griežtą aukštį galima nusirodyti */
+        height: 137px;
+
+        /* nereikalinga tik dėl vizualumo uždėta */
+        background-color: azure;
+        border: 8px dashed blue;
+      }
+      main {
+        /* nereikalinga tik dėl vizualumo uždėta */
+
+        border: 10px solid yellow;
+      }
+      .hero {
+        /* nereikalinga tik dėl vizualumo uždėta */
+        background-color: gray;
+        border: 8px dashed yellowgreen;
+        /* 
+        su aukščiu irgi nereikia piktnaudžiauti 
+        dažniausiai aukštį sukuria vidiniai elementai sudėti
+        o jei turinio nedaug, o  reikia kad sekcija pavyzdžiui 
+        užimtų 100% ekrano aukščio galima naudoti 100vh matavimo vienetus
+        */
+        height: 250px;
+      }
+      .portfolio {
+        /* nereikalinga tik dėl vizualumo uždėta */
+        background-color: burlywood;
+        border: 8px dashed purple;
+        height: 250px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="body">
+      <div class="container">
+        <header>Header content</header>
+        <main>
+          <section class="hero">Hero page content</section>
+          <section class="portfolio">Portfolio content</section>
+          <section class="portfolio">Portfolio content</section>
+          <section class="portfolio">Portfolio content</section>
+          <section class="portfolio">Portfolio content</section>
+          <section class="portfolio">Portfolio content</section>
+          <section class="portfolio">Portfolio content</section>
+          <section class="portfolio">Portfolio content</section>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>
