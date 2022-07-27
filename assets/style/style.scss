@@ -401,12 +401,12 @@ header {
 .projects-small {
   display: flex;
   justify-content: space-between;
-  margin: 140px 0 50px 0;
+  margin: 140px -15px 50px -15px;
   
   .sm-block {
     max-width: 530px;
     padding: 25px;
-    margin: 0 0 50px 0;
+    margin: 0 15px 50px 15px;
     @include projectBorder;
     .small_image {
       max-height: 275px;
