@@ -20,21 +20,57 @@ $shadow:
     text-decoration: none;
   }
 
+@mixin sectionTitle() {
+    font-family: $font;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 55px;
+    line-height: 82px;
+    margin: 0 0 120px 100px;
+}
+
+
 @mixin projectBorder() {
     box-shadow: 0px 0px 12px #FFFFFF;
     border-radius: 50px 0px;  
-  }
+}
 
-
-
-@mixin sectionTitle() {
+@mixin projectTitle($after) {
+  position: relative;
+  text-transform: uppercase;
   font-family: $font;
   font-style: normal;
   font-weight: 600;
-  font-size: 55px;
-  line-height: 82px;
-  margin: 0 0 120px 100px;
+  font-size: 36px;
+  line-height: 88.5%;
+  transition: all 1s;
+
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 160%;
+    height: $after;
+    background: $gradient;
+    left: -30%;
+    bottom: -33px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+  }
 }
+
+
   // @mixin adaptiv-font($bigSize, $mobSize) {
   //   $diference: $bigSize - $mobSize;
   //   $addMobSize: $diference + $diference * 0.7;

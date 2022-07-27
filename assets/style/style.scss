@@ -1,7 +1,6 @@
 @import "_nullstyle.scss";
 @import "_variable.scss";
 
-
 .full {
   background: $dark-bg;
   width: 100%;
@@ -287,13 +286,88 @@ header {
 // PROJECT style START
 // ---------------------------------
 
-.projects{
+.projects {
   padding: 100px 15px;
 }
 .title {
   @include sectionTitle;
 }
 
+.project_text {
+  flex: 1;
+  padding: 62px 0 42px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  .pr_title {
+    position: relative;
+    text-transform: uppercase;
+    font-family: $font;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 88.5%;
+    transition: all 1s;
+
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 170%;
+      height: 10px;
+      background: $gradient;
+      left: -35%;
+      bottom: -33px;
+      border-radius: 10px;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      -o-border-radius: 10px;
+      transition: all 1s;
+      -webkit-transition: all 1s;
+      -moz-transition: all 1s;
+      -ms-transition: all 1s;
+      -o-transition: all 1s;
+    }
+  }
+  .pr_text {
+    max-width: 550px;
+    font-family: $font;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 150%;
+    margin: 60px 0 0 40px;
+  }
+  .pr_link {
+    color: $white;
+    width: 220px;
+    height: 65px;
+    background: $gradient;
+    display: block;
+    text-align: center;
+    line-height: 65px;
+    font-family: $font;
+    font-weight: 600;
+    font-size: 20px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    // position: relative;
+    // margin-bottom: 76px;
+    cursor: pointer;
+    &:hover {
+      box-shadow: $shadow;
+      background: $reversegradient;
+    }
+  }
+}
 .project_block {
   @include projectBorder;
   display: flex;
@@ -301,83 +375,7 @@ header {
   padding: 30px 30px 30px 0;
   margin-top: 50px;
 
-  .project_text{
-    flex:1;
-    padding: 62px 0 42px 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    .pr_title{
-      position: relative;
-      text-transform: uppercase;
-      font-family: $font;
-      font-style: normal;
-      font-weight: 600;
-      font-size: 36px;
-      line-height: 88.5%;
-      transition: all 1s;
-     
-      -webkit-transition: all 1s;
-      -moz-transition: all 1s;
-      -ms-transition: all 1s;
-      -o-transition: all 1s;
-      &::after{
-        content: '';
-        position: absolute;
-        width: 170%;
-        height: 10px;
-        background: $gradient;
-        left: -35%;
-        bottom: -33px;
-        border-radius: 10px;
-        -webkit-border-radius: 10px;
-        -moz-border-radius: 10px;
-        -ms-border-radius: 10px;
-        -o-border-radius: 10px;
-        transition: all 1s;
-        -webkit-transition: all 1s;
-        -moz-transition: all 1s;
-        -ms-transition: all 1s;
-        -o-transition: all 1s;
-}
-    }
-    .pr_text{
-      max-width: 550px;
-      font-family: $font;
-      font-style: normal;
-      font-weight: 600;
-      font-size: 28px;
-      line-height: 150%;
-      margin: 60px 0 0 40px
-    }
-    .pr_link{
-        color:$white;
-        width: 220px;
-        height: 65px;
-        background: $gradient;
-        display: block;
-        text-align: center;
-        line-height: 65px;
-        font-family: $font;
-        font-weight: 600;
-        font-size: 20px;
-        border-radius: 50px;
-        -webkit-border-radius: 50px;
-        -moz-border-radius: 50px;
-        -ms-border-radius: 50px;
-        -o-border-radius: 50px;
-        // position: relative;
-        // margin-bottom: 76px;
-        cursor: pointer;
-        &:hover {
-          box-shadow: $shadow;
-          background: $reversegradient;
-        }
-      
-    }
-
-  }
+  
   .project_img {
     flex: 1;
     display: flex;
@@ -388,17 +386,81 @@ header {
       border-radius: 0 0 50px 0;
     }
   }
-  &:hover .pr_title::after{
+  &:hover .pr_title::after {
     background: $reversegradient;
-    width: 200%;
-    left: -50%;
+    width: 180%;
+    left: -40%;
     transition: all 1s;
     -webkit-transition: all 1s;
     -moz-transition: all 1s;
     -ms-transition: all 1s;
     -o-transition: all 1s;
-}
+  }
 }
 
+.projects-small {
+  display: flex;
+  justify-content: space-between;
+  margin: 140px 0 50px 0;
+  
+  .sm-block {
+    max-width: 530px;
+    padding: 25px;
+    margin: 0 0 50px 0;
+    @include projectBorder;
+    .small_image {
+      max-height: 275px;
+      overflow: hidden;
+      border-radius: 50px 0 0 0;
+      -webkit-border-radius: 50px 0 0 0;
+      -moz-border-radius: 50px 0 0 0;
+      -ms-border-radius: 50px 0 0 0;
+      -o-border-radius: 50px 0 0 0;
+      img {
+        width: 100%;
+        height: auto;
+        
+      }
+    }
+    .project_text {
+      padding: 34px 0 0 0;
+      .pr_title {
+        
+        &::after {
+          content: "";
+          position: absolute;
+          width: 160%;
+          height: 4px;
+          background: $gradient;
+          left: -30%;
+          bottom: -25px;
+          border-radius: 10px;
+          -webkit-border-radius: 10px;
+          -moz-border-radius: 10px;
+          -ms-border-radius: 10px;
+          -o-border-radius: 10px;
+          transition: all 1s;
+          -webkit-transition: all 1s;
+          -moz-transition: all 1s;
+          -ms-transition: all 1s;
+          -o-transition: all 1s;
+        }
+      }
+      .pr_text{
+        margin: 57px 0 40px 0px;
+      }
+    }
+  }
+  &:hover .pr_title::after {
+    background: $reversegradient;
+    width: 180%;
+    left: -40%;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+  }
+}
 
 @import "_media.scss";
