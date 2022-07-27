@@ -20,7 +20,21 @@ $shadow:
     text-decoration: none;
   }
 
+@mixin projectBorder() {
+    box-shadow: 0px 0px 12px #FFFFFF;
+    border-radius: 50px 0px;  
+  }
 
+
+
+@mixin sectionTitle() {
+  font-family: $font;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 82px;
+  margin: 0 0 120px 100px;
+}
   // @mixin adaptiv-font($bigSize, $mobSize) {
   //   $diference: $bigSize - $mobSize;
   //   $addMobSize: $diference + $diference * 0.7;

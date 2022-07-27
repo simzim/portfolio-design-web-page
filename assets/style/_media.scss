@@ -21,6 +21,28 @@
     display: block;
     cursor: pointer;
   }
+
+  .project_block{
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    max-width: 610px;
+    margin: 0 auto;
+    padding: 30px;
+
+    .project_img {
+      overflow: visible;
+      justify-content: center;
+    img {
+      width: 100%;
+      border-radius: 50px 0 50px 0;
+      -webkit-border-radius: 50px 0 50px 0;
+      -moz-border-radius: 50px 0 50px 0;
+      -ms-border-radius: 50px 0 50px 0;
+      -o-border-radius: 50px 0 50px 0;
+    }
+  }
+  }
 }
 
 @media screen and (max-width: 760px) {
