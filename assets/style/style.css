@@ -392,7 +392,7 @@ header .menu_mobile .show {
   font-style: normal;
   font-weight: 600;
   font-size: 28px;
-  line-height: 42px;
+  line-height: 150%;
   margin: 60px 0 0 40px;
 }
 .project_block .project_text .pr_link {
@@ -450,6 +450,15 @@ header .menu_mobile .show {
   .hero .hero_text {
     font-size: calc(20px + 0.8333333333vw);
   }
+  .project_block .project_text .pr_title {
+    font-size: calc(28px + 0.6666666667vw);
+  }
+  .project_block .project_text .pr_text {
+    font-size: calc(20px + 0.6666666667vw);
+  }
+  .title {
+    font-size: calc(35px + 1.6666666667vw);
+  }
 }
 @media screen and (max-width: 1000px) {
   .menu,
@@ -467,6 +476,9 @@ header .menu_mobile .show {
     max-width: 610px;
     margin: 0 auto;
     padding: 30px;
+  }
+  .project_block .project_text .pr_text {
+    margin: 80px 0 40px 0px;
   }
   .project_block .project_img {
     overflow: visible;
@@ -513,6 +525,9 @@ header .menu_mobile .show {
   .hero::before {
     right: -300px;
     transform: scale(0.8);
+  }
+  .title {
+    margin: 0 0 50px 0;
   }
 }
 @media screen and (max-width: 400px) {

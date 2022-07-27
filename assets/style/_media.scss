@@ -10,6 +10,18 @@
       font-size: calc(20px + 10 * (100vw / 1200));
     }
   }
+
+  .project_block .project_text .pr_title{
+    font-size: calc(28px + 8 * (100vw / 1200));
+  }
+
+  .project_block .project_text .pr_text{
+    font-size: calc(20px + 8 * (100vw / 1200));
+  }
+   .title {
+    font-size: calc(35px + 20 * (100vw / 1200));
+   }
+
 }
 
 @media screen and (max-width: 1000px) {
@@ -29,6 +41,9 @@
     max-width: 610px;
     margin: 0 auto;
     padding: 30px;
+    .project_text .pr_text{
+      margin: 80px 0 40px 0px;
+    }
 
     .project_img {
       overflow: visible;
@@ -78,7 +93,16 @@
       right: -300px;
       transform: scale(0.8);
     }
+
+    
   }
+  .title {
+    margin: 0 0 50px 0;
+  }
+
+
+
+
 }
 
 @media screen and (max-width: 400px) {
@@ -95,4 +119,6 @@
       -o-transform: scale(0.6);
     }
   }
+
+
 }
