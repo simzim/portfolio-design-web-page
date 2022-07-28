@@ -101,12 +101,11 @@ header .logo {
   font-weight: 500;
   font-size: 30px;
   color: #fff;
-  transition: all 1s;
-  -webkit-transition: all 1s;
-  -moz-transition: all 1s;
-  -ms-transition: all 1s;
-  -o-transition: all 1s;
-  transition-delay: 1s;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
 }
 header .logo svg {
   width: 48px;
